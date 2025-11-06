@@ -3,11 +3,10 @@ public class Cliente {
     private String nombre;
 
     public Cliente(String identificador, String nombre) {
-        this.identificador = identificador; // Matrícula o código de acceso
+        this.identificador = identificador; 
         this.nombre = nombre;
     }
 
-    // Getters
     public String getIdentificador() {
         return identificador;
     }

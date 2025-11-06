@@ -13,5 +13,3 @@ Se trata de una orden de compra específica. Cada pedido se identifica de manera
 
 LineaPedido
 La clase LineaPedido es un detalle de las transacciones. Su propósito es capturar un artículo específico dentro de un Pedido. Sus atributos son una referencia al objeto producto que se está comprando, la cantidad de unidades en enteros solicitadas de ese producto, y el precioLinea es un double este es el resultado de multiplicar la cantidad por el precio base del producto.
-
-![alt text](diagrama.png)

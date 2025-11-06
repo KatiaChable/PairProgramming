@@ -2,12 +2,12 @@ public class App {
     public static void main(String[] args) {
         Cafeteria cafeteriaApp = new Cafeteria();
 
-        cafeteriaApp.registrarCliente("M1001", "Ana Garcia (Estudiante)");
-        cafeteriaApp.registrarCliente("P2005", "Dr. Luis Perez (Profesor)");
+        cafeteriaApp.registrarCliente("M1001", "Katia");
+        cafeteriaApp.registrarCliente("P2005", "Alexa");
 
-        cafeteriaApp.registrarProducto("E001", "Empanada de Carne", 1.50);
-        cafeteriaApp.registrarProducto("C002", "Café Americano Grande", 2.25);
-        cafeteriaApp.registrarProducto("P003", "Pollo a la Parmesana", 8.75);
+        cafeteriaApp.registrarProducto("E001", "Empanada de queso", 1.50);
+        cafeteriaApp.registrarProducto("C002", "Café Americano chico", 2.25);
+        cafeteriaApp.registrarProducto("P003", "Pollo empanizado", 8.75);
         cafeteriaApp.registrarProducto("G004", "Galleta de Chispas", 1.00);
 
         Producto empanada = cafeteriaApp.getProducto("E001");

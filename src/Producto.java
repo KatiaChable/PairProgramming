@@ -9,7 +9,6 @@ public class Producto {
         this.precioBase = precioBase;
     }
 
-    // Getters
     public String getSku() {
         return sku;
     }
