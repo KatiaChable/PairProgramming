@@ -1,18 +1,23 @@
-## Getting Started
+## Explicación
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+La solución del sistema de gestión de cafetería se basa en el diseño de cinco (5) clases principales, cada una con un rol específico para modelar las entidades del negocio: Cafeteria, Cliente, Producto, Pedido y LineaPedido.
 
-## Folder Structure
+Presentamos la solución de este sistema de una cafetería el cual se conforma de 5 clases cada una de ellas tiene un rol especfíco para modelar lo que serían las entidades del negocio
 
-The workspace contains two folders by default, where:
+Cafeteria
+Esta es el principal del sistema, gestiona todas las entidades usando un MAP string, producto llamado productos para almacenar el inventario accediento mediante el SKU. Un map String Cliente llamado clientes para guardar un registro de los usuarios por medio de su id y un List pedido. Llamado pedidos que guarda el historial de las transacciones
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Cliente
+Modela las personas que realizan compras. Tiene un identificador en String (no se realizan operaciones con el id) que es el código único asignado al cliente. y el nombre en String que almacena el nombre completo.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Producto 
+Son los artículos disponibles para vender. Sus atributos son su SKU en string (id), codigo de inventario único para el producto, nombre en String y su precio base en double por costo unitario
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Pedido 
+Se trata de uan orden de compra específica. Cada pedido se identifica de manera única con un idPedido, generado por un contador que es estático, Mantiene una referencia al objeto cliente que lor ealizó y guarda el detalle de la compra en una lista List LineaPedido. Calcula y almacena el totalPedido en double, este es el total de la suma de precios de los productos que se compró.
 
-## Dependency Management
+LineaPedido
+La clase LineaPedido es un detalle de las transacciones. Su propósito es capturar un artículo específico dentro de un Pedido. Sus atributos son una referencia al objeto producto que se está comprando, la cantidad de unidades en enteros solicitadas de ese producto, y el precioLinea es un double este es el resultado de multiplicar la cantidad por el precio base del producto.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+
+
